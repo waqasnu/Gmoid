@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+<script type="text/javascript" src="cordova.js"></script>
+
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center text-warning">
+				h3. Lorem ipsum dolor sit amet.
+			</h3> <a href="page1.html" class="btn btn-danger btn-block btn-lg" type="button">Button</a> <a href="#" class="btn btn-warning btn-lg btn-block" type="button">Button</a>
+		</div>
+	</div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+<script>
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+    admobid = { // for Android
+        banner: 'ca-app-pub-1231059512551117/9600347381',
+        interstitial: 'ca-app-pub-1231059512551117/2077080589'
+    };
+} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+    admobid = { // for iOS
+        banner: 'ca-app-pub-1231059512551117/9600347381',
+        interstitial: 'ca-app-pub-1231059512551117/2077080589'
+    };
+} else {
+    admobid = { // for Windows Phone
+        banner: 'ca-app-pub-1231059512551117/9600347381',
+        interstitial: 'ca-app-pub-1231059512551117/2077080589'
+    };
+}
+
+function initApp() {
+    if (AdMob) {
+        AdMob.createBanner({
+            adId : admobid.banner,
+            position : AdMob.AD_POSITION.BOTTOM_CENTER,
+            autoShow : true
+        });
+    }
+}
+
+document.addEventListener('deviceready', initApp, false);
+</script>
+
+</html>
