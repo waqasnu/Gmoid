@@ -5,9 +5,9 @@ version="1.0.20141225"
 xmlns="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
 >
-    <name>AppsForKids</name>
+    <name>My Shop</name>
     
-    <description>Itiskidsapp</description>
+    <description>This is My Shop App</description>
     <author email="rjfun.mobile@gmail.com" href="http://rjfun.github.io/">RjFun</author>
     <content src="index.html" />
     <access origin="*" />
